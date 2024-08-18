@@ -38,8 +38,8 @@ gadik >> father, mother
 velik >> child (2-13 years old)
 
 Helen is pintik tid rumeikya >> Helen and the baby are girls. 
-Smith weltik tir gadikye >> Mr. Smith is the father. 
-Smith weltik tir gadikya >> Mrs. Smith is the mother. 
+Smith weltikye tir gadikye >> Mr. Smith is the father. 
+Smith weltikya tir gadikya >> Mrs. Smith is the mother. 
 John tir velik >> John is a child. 
 Helen tir velik >> Helen is a child. 
 Pintik tir rumeik >> The baby is a child. 
