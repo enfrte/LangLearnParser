@@ -1,0 +1,12 @@
+{
+    "name": "me/lang-learn-parser",
+    "autoload": {
+        "psr-4": {
+            "LangLearnParser\\": "src/"
+        }
+    },
+    "require": {
+        "flightphp/core": "^3.11",
+        "latte/latte": "^3.0"
+    }
+}

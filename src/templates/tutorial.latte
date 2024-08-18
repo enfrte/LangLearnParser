@@ -1,0 +1,36 @@
+{layout 'layout.latte'}
+
+{block content}
+
+	{if !empty($data)}
+		<p class="pt-3"><a href="{Flight::get('basePath')}">Home</a></p>
+
+		{foreach $data as $line}
+			{foreach $line as $key => $text}
+				{if strpos($key, 'chapter_') !== false}
+					<h2 class="mt-5 mb-3">{$text}</h2>
+				{/if}
+
+				{if is_int($key)}
+					{$text}<br>
+				{/if}
+
+				{if strpos($key, 'translation') !== false}
+					<div class="d-flex align-items-top justify-content-between border border-1 p-2 mt-1 mb-1">
+						<span class="flex-shrink-0 pe-2 border-end">{$text['left']}</span>
+						<span class="flex-grow-1 w-100 border-start ps-2">{$text['right']}</span>
+					</div>
+				{/if}
+			{/foreach}	
+		{/foreach}
+	{else}
+		<h1 class="pt-5">Select a tutorial</h1>
+		<ul>
+            <li style="list-style-type: none;">
+				<a href="{Flight::get('basePath')}?file=kotava_beginner.md">Kotava beginner</a>
+			</li>
+            <!-- Add more links as needed -->
+        </ul>
+	{/if}
+
+{/block}
